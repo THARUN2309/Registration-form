@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style> * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right , #8348cc, #3fb6e0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .form-box {
+    background-color: #1b1c4c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="email"],
+  .form-box input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .checkbox  {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  
+  .checkbox  label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .form-box input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .button  {
+    display: flex;
+    justify-content: flex-end;  
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]
+   {
+    background-color: #45a049;
+  }
+  
+  </style>
+</head>
+<body>
+    <div class="form">
+     <form class="form-box">
+      <h2>Registration Form</h2>
+        <input type="text" placeholder="First name" required>
+        <input type="text" placeholder="Last name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Password" required>
+          <div class="checkbox">
+            <label><input type="checkbox"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+            <label><input type="checkbox"> Duis aute irure dolor in reprehenderit in voluptate velit esse.</label>
+          </div>
+          <div class="button ">
+            <button type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
